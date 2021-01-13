@@ -1,0 +1,846 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;1,700&display=swap');
+
+* {
+    padding: 0; 
+    margin: 0;
+}
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 1.5em;
+    overflow-x: hidden;
+}
+
+/* TIPOGRAFIA */
+body {
+	font-family: 'Noto Serif', sans-serif;
+	font-size: 18px;
+}
+
+.flex-container > div > nav > ul > li > a {  /* Textos de la cabecera */
+    font-family: 'Open Sans', sans-serif; /* menú de navegación  */
+    font-size: 14px;
+}
+
+.flex-container > div > nav > ul > li > a.active {  /* Enlaces activos del menú de navegación principal: cursiva y negrita (700). */
+    font-weight: 700;
+    font-style: italic;
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif; /* pie de pagina */
+}
+
+section .flex-container #club {
+    font-family: 'Open Sans', sans-serif; /* formulario de la página de inicio */
+}
+
+.sessions-section2-movies > div > p {
+    font-family: 'Open Sans', sans-serif; /*  titulares dentro de la página sesiones-2020.htm
+     */
+    font-size: 15px;
+    font-weight: bold;
+ }
+
+/* COLORES */
+
+body {
+    background-color: #e8e8e8; /* Fondo de las páginas */
+    color: #1c1c1c; /* Textos */
+}
+
+.flex-container > div {
+    background-color: #e8e8e8;
+}
+
+.flex-container > div > nav > ul > li > a {
+    color: #1c1c1c; /* Menús de navegación */
+}
+
+footer {
+    background-color: #433A44; /* Fondo del pie de páginas */
+}
+
+footer .flex-container {
+    background-color: #433A44;
+  }
+
+footer .flex-container > div{
+    background-color: #433A44;
+    color: #FFFFFF;  /* Texto sobre fondo pie de página y contraste && Pie de página */
+}
+
+
+.flex-container button{ /* Botones de inicio de sesión y de registro del formulario */
+    background-color: #9b1700;
+    color: #FFFFFF;
+}
+.flex-container button:hover { 
+    background-color: #1c1c1c;  /* Estado hover */
+}
+
+#logo {
+    color: black;
+}
+
+footer .flex-container > div > ul > li > a {
+    color: white;
+}
+
+footer .flex-container > div > ul > li > a:hover {
+    color: #9b1700; /* Estat hover */
+}
+
+section .flex-container #club a {
+    color: #9b1700;
+}
+
+#clubes > div > a {
+    color: #9b1700;
+}
+
+#puntos {
+    color: #9b1700;
+}
+
+.sessions-section2-links > ul > li > a {
+    color: #1c1c1c;
+}
+
+.sessions-section2-movies > div {
+    background-color: white;
+    box-shadow: 0.5px 0.5px gray;
+}
+
+.sessions-section2-movies > div > a > img {
+    box-shadow: 1.5px 1.5px #888888;
+}
+.sessions-section2-movies > div > p {
+   color: #9b1700;
+}
+
+.sessions-section2-movies a {
+    color: #9b1700;
+} 
+
+.titulo-detalle-sesion a{
+    color: #1c1c1c;
+ }
+
+.sessions-section2-movies > div > a > img {
+    opacity: 0.5; /* imágens de la página sesiones-2020.html */
+}
+
+/* PANTALLA PEQUEÑA, MOBILE FIRST *//* PANTALLA PEQUEÑA, MOBILE FIRST *//* PANTALLA PEQUEÑA, MOBILE FIRST *//* PANTALLA PEQUEÑA, MOBILE FIRST */
+@media screen and (max-width: 600px) {
+  
+/* CABECERA */
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container > div {
+    margin: 0px;
+    padding: 20px;
+  }
+
+  .flex-container > div > nav > ul > li {
+    list-style:none;
+  }
+
+  .flex-container > div > nav > ul > li > a {
+    text-decoration:none;
+  }
+
+  .flex-container > div > nav > ul > li {
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: center;
+  }
+
+  .flex-container button{
+      border-radius: 2px;
+      border: 0;
+      padding: 3px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .flex-item{
+      order: 2;
+  }
+
+  .flex-container .flex-item > img{
+    width: 20%;
+    height: 20%;
+}
+
+#logo {
+    text-decoration: none;
+    font-size: 26px;
+    top: -6px;
+    margin-left: 3%;
+    position: relative;
+}
+
+
+  /* FOOTER */
+
+  footer {
+      height: 400px;
+  }
+
+  footer .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer .flex-container > div{
+    align-items: center;
+    margin: 8px;
+    line-height: 40px;
+    font-size: 14px;
+  }
+
+footer .flex-container > div > ul > li > a {
+    text-decoration:none;
+    text-align: center;
+    list-style:none;
+}
+
+footer .flex-container > div > ul > li {
+    list-style:none;
+}
+
+#alumnos > ul > li {
+    line-height: 0.6ex;
+}
+
+/* SECTION */
+
+section .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+section .flex-container h1, h2 {
+    margin: 10px;
+}
+
+section .flex-container p {
+    text-align: center;
+}
+
+section .flex-container #iconos {
+    flex-direction: column;
+}
+
+section .flex-container #iconos img {
+    width: 120px;
+    height: 120px;
+}
+
+section .flex-container #club {
+    flex-direction: column;
+}
+
+section .flex-container #club > div {
+    text-align: left;
+    width: 400px;
+}
+
+section .flex-container #club #placeholder {
+   width: 100%;
+   height: 20px;
+   margin-bottom: 10px;
+   text-indent: 12px;
+}
+
+.placeholder {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    text-indent: 12px;
+}
+
+section .flex-container #club a {
+    text-decoration: none;
+}
+
+section .flex-container #club h3 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height : 30px;
+    text-align: left;
+}
+
+section .flex-container #club p, label {
+    font-size: 10px;
+    text-align: left;
+    width: 89%;
+    margin-left: 0%;
+}
+
+
+/* CLUBES TEMATICOS */
+
+section h1 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+#clubes {
+    display: flex;
+    flex-direction: column;
+    height: 720px;
+    width: 100%;
+    margin-bottom: 2000px;
+}
+
+#clubes > div {
+    height: 60%;
+    width: 60%;
+}
+
+#clubes > div > img {
+    width: 100%;
+    height: 50%;
+}
+
+#clubes > div > h3, p {
+   text-align: justify;
+   margin-bottom: 10px;
+}
+
+#clubes > div > h3 {
+    margin-top: 4px;
+}
+
+#clubes > div > a {
+    float: left;
+    text-align: left;
+    margin-right: 10px;
+    text-decoration:none;
+}
+
+
+/* SESSIONS 2020 */
+
+#puntos {
+    border-top: dotted 5px;
+    width: 84%;
+    margin-left: 10%;
+}
+.sessions-section1 > p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.sessions-section2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sessions-section2-links {
+    margin-top: 8%;
+    margin-left: -50%;
+}
+
+.sessions-section2-links a {
+    font-size: 12px;
+}
+
+.sessions-section2-links > ul > li {
+    list-style: none;
+}
+.sessions-section2-links > ul > li > a {
+    text-decoration: none;
+}
+
+.sessions-section2-movies {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding:5px; 
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.sessions-section2-movies > div {
+    width: 40%;
+    height: 350px;
+    margin-top: 4%;
+    border-radius: 5px;
+}
+
+.sessions-section2-movies > div > a > img {
+    width: 100%;
+    height: 300px;
+}
+.sessions-section2-movies > div > p {
+   margin-left: 10px;
+   margin-top: 10px;
+}
+
+.sessions-section2-movies a {
+    text-decoration: none;
+} 
+
+/* DETALLE SESION */
+
+.titulo-detalle-sesion{
+    margin-bottom: 3%;
+    margin-left: 5%;
+}
+
+.titulo-detalle-sesion p{
+    text-align: center;
+}
+
+.titulo-detalle-sesion p {
+    font-size: 10px;
+}
+.titulo-detalle-sesion a{
+   text-decoration: none;
+}
+
+.flex-container-detalle-sesion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    margin-left: 3%;
+}
+
+.flex-container-detalle-sesion > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.flex-container-detalle-sesion > div > p, li{
+   text-indent: 30px;
+}
+
+.flex-container-detalle-sesion > div > ul > li{
+    list-style: none;
+}
+
+.flex-container-detalle-sesion > div > h3{
+   margin-bottom: 3%;
+}
+
+#container-video{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .responsive-iframe {
+    width: 100%;
+    height: 280px;
+  }
+
+ span{
+      margin-top: -10px;
+      font-size: 10px;
+      font-style: italic;
+  }
+
+  .imgRedonda {
+    width:90px;
+    height:90px;
+    border-radius:500px;
+    vertical-align: middle;
+    float: left;
+}
+}
+
+/* PANTALLA GRANDE *//* PANTALLA GRANDE *//* PANTALLA GRANDE *//* PANTALLA GRANDE *//* PANTALLA GRANDE */
+@media screen and (min-width: 600px) {
+    body {
+
+    }
+
+/* CABECERA */
+.flex-container{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+.flex-container > div {
+    margin: 0px;
+    padding: 20px;
+  }
+
+  .flex-container > div > nav > ul > li {
+    list-style:none;
+    display: inline;
+    margin-right: 40px;
+  }
+
+  .flex-container > div > nav > ul > li > a {
+    text-decoration:none;
+  }
+
+  #flex-container-div2{
+    flex-grow: 1;
+    text-align: center;
+    display: inline;
+  }
+
+  .flex-container button{
+      border-radius: 2px;
+      border: 0;
+      padding: 3px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .flex-container .flex-item > img{
+      width: 20%;
+      height: 20%;
+  }
+
+  #logo {
+      text-decoration: none;
+      font-size: 26px;
+      top: -6px;
+      margin-left: 3%;
+      position: relative;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+      height: 180px;
+  }
+
+  footer .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  footer .flex-container > div{
+    width: 46%;
+    margin: 8px;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  footer .flex-container > div > ul > li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer .flex-container > div > ul > li > a {
+    text-decoration:none;
+}
+
+footer .flex-container #rrss {
+    text-align: right;
+}
+
+
+/* SECTION */
+
+section .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+section .flex-container h1, h2 {
+    margin: 10px;
+}
+
+section .flex-container p {
+    text-align: center;
+    width: 70%;
+    margin-left: 14.5%;
+}
+
+section .flex-container #iconos {
+    flex-direction: row;
+}
+
+section .flex-container #iconos img {
+    width: 120px;
+    height: 120px;
+}
+
+section .flex-container #club {
+    display: flex;
+    flex-direction: row;
+}
+
+section .flex-container #club > div {
+    text-align: left;
+    width: 40%;
+}
+
+section .flex-container #club a {
+    text-decoration: none;
+}
+
+section .flex-container #club #placeholder {
+   width: 100%;
+   height: 20px;
+   margin-bottom: 10px;
+   text-indent: 12px;
+}
+
+.placeholder {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    text-indent: 12px;
+}
+
+section .flex-container #club h3 {
+    margin-top: -175px;
+    font-size: 24px;
+    font-weight: normal;
+    line-height : 30px;
+}
+
+section .flex-container #club p, label {
+    font-size: 10px;
+    text-align: left;
+    width: 89%;
+    margin-left: 0%;
+}
+
+/* CLUBES TEMATICOS */
+
+section h1 {
+    text-align: center;
+}
+
+#clubes {
+    display: flex;
+    flex-direction: row;
+    height: 720px;
+    width: 70%;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-left: 15%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+#clubes > div {
+    height: 41%;
+    width: 25%;
+    flex-grow: 1;
+    margin-bottom: 8%;
+}
+
+#clubes > div > img {
+    width: 100%;
+    height: 70%;
+}
+
+#clubes > div > h3, p {
+   text-align: justify;
+   margin-bottom: 10px;
+}
+
+#clubes > div > h3 {
+    margin-top: 4px;
+}
+
+#clubes > div > a {
+    float: left;
+    text-align: left;
+    margin-right: 10px;
+    text-decoration:none;
+    font-size: 14px;
+}
+
+#clubes > div > p {
+    font-size: 12px;
+    text-align: left;
+}
+
+
+/* SESSIONS 2020 */
+
+#puntos {
+    border-top: dotted 5px;
+    width: 84%;
+    margin-left: 10%;
+}
+.sessions-section1 > p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 14.5%;
+    width: 70%;
+}
+
+.sessions-section2 {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+.sessions-section2-links {
+    width: 20%;
+    margin-left:6%;
+    margin-top: -2150px;
+}
+
+.sessions-section2-links a {
+    font-size: 12px;
+}
+
+.sessions-section2-links > ul > li {
+    list-style: none;
+}
+.sessions-section2-links > ul > li > a {
+    text-decoration: none;
+}
+
+.sessions-section2-movies {
+    display: flex;
+    flex-wrap: wrap;
+    padding:5px; 
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.sessions-section2-movies > div {
+    width: 25%;
+    height: 350px;
+    margin-left: -100px;   
+    flex:1 1 auto;
+    margin: 25px;  
+    margin-top: 4%;
+    border-radius: 5px;
+}
+
+.sessions-section2-movies > div > a > img {
+    width: 100%;
+    height: 300px;
+}
+.sessions-section2-movies > div > p {
+   font-size: 13px;
+   margin-left: 10px;
+   margin-top: 10px;
+   font-weight: bold;
+}
+
+.sessions-section2-movies a {
+    text-decoration: none;
+} 
+
+/* DETALLE SESION */
+
+.titulo-detalle-sesion{
+    margin-left: 17.5%;
+    margin-bottom: 3%;
+}
+
+.titulo-detalle-sesion p {
+    font-size: 10px;
+}
+.titulo-detalle-sesion a{
+   text-decoration: none;
+}
+
+.flex-container-detalle-sesion{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: flex-start;
+    height: 1030px;
+    margin-left: 15%;
+    margin-bottom: 4%;
+}
+
+.flex-container-detalle-sesion > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    height: 600px;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 3%;
+}
+
+.flex-container-detalle-sesion > div > p, li{
+   text-indent: 30px;
+}
+
+.flex-container-detalle-sesion > div > ul > li{
+    list-style: none;
+}
+
+.flex-container-detalle-sesion > div > h3{
+   margin-bottom: 3%;
+}
+
+#container-video{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+  
+  .responsive-iframe {
+    width: 100%;
+    height: 180%;
+  }
+
+  span{
+      margin-top: -10px;
+      font-size: 10px;
+      font-style: italic;
+  }
+
+  .imgRedonda {
+    width:115px;
+    height:115px;
+    border-radius:500px;
+    vertical-align: middle;
+    float: left;
+}
+
+}
+
+
+
+ 
+
